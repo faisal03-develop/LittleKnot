@@ -6,9 +6,11 @@ import SignUpBanner from "@/components/sign-up-banner/index"
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4">
+    <div>
     <SignUpBanner />
+    <div className="container mx-auto px-4">
     <Navbar />
+    </div>
     </div>
   );
 }
