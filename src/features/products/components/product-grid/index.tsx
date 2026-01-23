@@ -1,0 +1,19 @@
+import { ProductCard } from '../product-card/index'
+import { Product } from '../../types/product'
+
+interface ProductGridProps {
+  products: Product[]
+}
+
+export function ProductGrid({ products }: ProductGridProps) {
+  return (
+    <section className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+        />
+      ))}
+    </section>
+  )
+}
