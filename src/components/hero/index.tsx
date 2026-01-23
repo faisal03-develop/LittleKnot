@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Messeges from "@/components/messeges/index"
 
 export default function index() {
   return (
@@ -15,30 +16,30 @@ export default function index() {
                 SHOP NOW
                 </button>
                 <div className="flex flex-row gap-20 mt-7">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col items-start">
                         <span className="text-5xl font-bold">64+</span>
                         <span className="font-extralight">Brands</span>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col items-start">
                         <span className="text-5xl font-bold">234+</span>
                         <span>Products</span>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col items-start">
                         <span className="text-5xl font-bold">2397+</span>
                         <span>Happy Customers</span>
                     </div>
                 </div>
             </div>
-            <div className="mx-auto reltive">
-                <Image src="/assets/hero-imag.png" height={800} width={400} alt="Hero Image"></Image>
+            <div className="mx-auto reltive h-160">
+                <Image src="/assets/musha.png" height={800} width={400} alt="Hero Image" className="mt-27 z-0"></Image>
                 <div>
-                    <Image src="/vector/small-star.png" height={56} width={56} alt="small-star" className="absolute top-50"></Image>
+                    <Image src="/vector/small-star.png" height={56} width={56} alt="small-star" className="absolute top-50  right-150"></Image>
                     <Image src="/vector/big-star.png" height={104} width={104} alt="big-star" className="absolute top-20 right-30"></Image>
                 </div>
             </div>
         </div>
-        <div className="w-full h-28 bg-black">
-
+        <div className="w-full h-28 z-1 absolute bg-black flex justify-center items-center">
+            <Messeges />
         </div>
     </div>
   )
