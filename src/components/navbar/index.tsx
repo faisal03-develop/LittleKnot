@@ -33,8 +33,8 @@ export default function index() {
             <input type="text"  placeholder="Search For Products..." className="border-none focus:outline-none active:border-none"/>
           </div>
           <div className="flex gap-6">
-            <Image src="/vector/cart.png" height={20} width={20} alt="Cart"></Image>
-            <Image src="/vector/user.png" height={20} width={20} alt="User"></Image>
+            <Image className="cursor-pointer" src="/vector/cart.png" height={20} width={20} alt="Cart"></Image>
+            <Image className="cursor-pointer" src="/vector/user.png" height={20} width={20} alt="User"></Image>
           </div>
         </div>
       </div>
