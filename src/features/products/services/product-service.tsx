@@ -5,7 +5,7 @@ export async function getProducts(): Promise<Product[]> {
     {
       id: '1',
       name: 'Dusty Pink Bow',
-      image: '/assets/bow1.jpg',
+      image: '/assets/bow1.jpeg',
       price: 20,
       discountPercentage: 20,
       rating: 4,
@@ -13,7 +13,7 @@ export async function getProducts(): Promise<Product[]> {
     {
       id: '2',
       name: 'Soft Cotton Scrunchie',
-      image: '/assets/bow2.jpg',
+      image: '/assets/bow2.jpeg',
       price: 15,
       rating: 5,
     },
