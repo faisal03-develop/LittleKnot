@@ -6,11 +6,9 @@ import Hero from "@/components/hero/index"
 export default function Page() {
   return (
     <div>
-      <SignUpBanner />
-      <div className="container mx-auto px-4">
+        <SignUpBanner />
         <Navbar />
         <Hero />
-      </div>
     </div>
   )
 }

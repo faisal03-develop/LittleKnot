@@ -1,10 +1,11 @@
-import Hero from "@/pages/home/page"
 
 
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <div className="container px-auto">
+      
+      </div>
     </div>
   );
 }
