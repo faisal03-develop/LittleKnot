@@ -30,7 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
 
       <div className="mt-4 space-y-1">
-        <h3 className="text-sm font-medium text-neutral-900 line-clamp-2">
+        <h3 className="font-bold text-neutral-900 line-clamp-2">
           {product.name}
         </h3>
 

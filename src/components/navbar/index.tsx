@@ -10,7 +10,7 @@ export default function index() {
           <Image src="/logo/logo.png" height={18} width={126} alt="Logo"></Image>
           {/* Navigation Links */}
           <div className="">
-            <ul className="flex flex-row gap-7 text-black">
+            <ul className="flex flex-row gap-7">
               <li>
                 <Link href="#">Shop</Link>
               </li>
