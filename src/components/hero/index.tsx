@@ -32,6 +32,7 @@ export default function index() {
             </div>
             <div className="mx-auto reltive h-160">
                 <Image src="/assets/musha.png" height={800} width={400} alt="Hero Image" className="mt-27 z-0"></Image>
+                {/* <video src="/assets/hero_video.mp4" height={500} width={400}></video> */}
                 <div>
                     <Image src="/vector/small-star.png" height={56} width={56} alt="small-star" className="absolute top-50  right-150"></Image>
                     <Image src="/vector/big-star.png" height={104} width={104} alt="big-star" className="absolute top-20 right-30"></Image>

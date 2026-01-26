@@ -2,13 +2,15 @@ import { ProductCard } from '../product-card/index'
 import { Product } from '../../types/product'
 
 interface ProductGridProps {
-  products: Product[]
+  products: Product[],
+  limit?:number,
 }
 
-export function ProductGrid({ products }: ProductGridProps) {
+export function ProductGrid({ products,limit }: ProductGridProps) {
+  const visibleProducts = limit ? products.slice(0, limit) : products;
   return (
     <section className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-      {products.map((product) => (
+      {visibleProducts.map((product) => (
         <ProductCard
           key={product.id}
           product={product}

@@ -20,13 +20,7 @@ export function ProductCard({ product }: ProductCardProps) {
           alt={product.name}
           fill
           className="object-cover transition-transform group-hover:scale-105"
-        />
-
-        {product.discountPercentage && (
-          <span className="absolute top-2 left-2 rounded-full bg-pink-200 px-3 py-1 text-xs font-medium text-pink-800">
-            {product.discountPercentage}% OFF
-          </span>
-        )}
+          />
       </div>
 
       <div className="mt-4 space-y-1">
@@ -39,23 +33,28 @@ export function ProductCard({ product }: ProductCardProps) {
           <div className="flex items-center gap-1 text-xs text-neutral-500">
             {Array.from({ length: 5 }).map((_, i) => (
               <span key={i}>
-                {i < product.rating ? '★' : '☆'}
+                {i < product.rating ? <Image src="/assets/star.png" width={14} height={14} alt="Star"></Image> : ''}
               </span>
             ))}
+            <span><span className='text-black font-medium'>{product.rating}</span>/5</span>
           </div>
         )}
 
         {/* Price */}
         <div className="flex items-center gap-2">
+          <span className="text-2xl font-semibold text-neutral-900">
+            ${discountedPrice}
+          </span>
           {product.discountPercentage && (
-            <span className="text-sm text-neutral-400 line-through">
+            <span className="text-2xl text-neutral-400 line-through">
               ${product.price}
             </span>
           )}
-
-          <span className="text-sm font-semibold text-neutral-900">
-            ${discountedPrice}
-          </span>
+          {product.discountPercentage && (
+            <span className="rounded-full bg-red-200 px-3 py-1 text-xs font-medium text-red-800">
+              -{product.discountPercentage}%
+            </span>
+          )}
         </div>
       </div>
     </div>
