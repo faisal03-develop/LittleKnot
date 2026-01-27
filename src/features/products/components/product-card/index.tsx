@@ -51,7 +51,7 @@ export function ProductCard({ product }: ProductCardProps) {
             </span>
           )}
           {product.discountPercentage && (
-            <span className="rounded-full bg-red-200 px-3 py-1 text-xs font-medium text-red-800">
+            <span className="rounded-full bg-red-100 px-3 py-1 text-sm font-bold text-red-500">
               -{product.discountPercentage}%
             </span>
           )}

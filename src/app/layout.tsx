@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// import {Satoshi} from 'next/font/local/'
+import {Bungee} from "next/font/google";
 import "./globals.css";
 import { Inter } from "next/font/google";  // Assuming you want Inter; if Geologica, import that instead
 
@@ -10,6 +10,11 @@ const interFont = Inter({
   weight: ["400", "700", "900"],
 });
 
+const bungeeFont = Bungee({
+  variable: "--font-bungee",
+  subsets: ["latin"],
+  weight: ["400"],
+})
 // const satoshiFont = Satoshi({
 //   variable: "--font-satoshi",
 //   src: [
@@ -54,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interFont.variable} --font-inter antialiased`}
+        className={`${interFont.variable} ${bungeeFont.variable} antialiased`}
       >
         {children}
       </body>
