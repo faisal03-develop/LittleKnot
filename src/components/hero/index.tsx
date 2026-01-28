@@ -12,7 +12,7 @@ export default function index() {
                 <div className="mt-5">
                     <span className="">Delightful handmade hair accessories for your sweet little ones. Thoughtfully customized and crafted with love and care.</span>
                 </div>
-                <button className="bg-black text-white font-extralight py-4 px-4 rounded-3xl text-sm w-52 h-12 my-8">
+                <button className="bg-black text-white font-extralight flex items-center justify-center rounded-3xl text-sm w-52 h-12 my-8">
                 SHOP NOW
                 </button>
                 <div className="flex flex-row gap-20 mt-7">

@@ -8,7 +8,7 @@ interface CategoryGridProps {
 export default function CategoriesGrid({categories}: CategoryGridProps) {
     const availableCategories = categories;
   return (
-        <section className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
+        <section className="grid gap-6 grid-cols-2 px-57 py-10">
         {availableCategories.map((category) => (
             <CategoryCard
             key={category.title}
