@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Messeges from "@/components/messeges/index"
+
 
 export default function index() {
   return (
