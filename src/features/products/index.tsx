@@ -11,6 +11,7 @@ export default async function ProductsPage() {
       <div className='bg-gray-300 h-0.5 my-20'></div>
       <h1 className="mb-10 text-3xl text-center font-extrabold font-bungee">TOP SELLING</h1>
       <ProductGrid products={products} limit={4} />
+      <div className='bg-gray-300 h-0.5 my-15'></div>
     </div>
   )
 }

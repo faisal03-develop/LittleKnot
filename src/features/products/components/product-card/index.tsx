@@ -13,7 +13,7 @@ export function ProductCard({ product }: ProductCardProps) {
   )
 
   return (
-    <div className="group rounded-2xl border border-neutral-200 bg-white p-4 transition-shadow hover:shadow-md">
+    <div className="group rounded-2xl border border-neutral-200 bg-white p-4 transition-shadow hover:shadow-md cursor-pointer">
       <div className="relative aspect-square overflow-hidden rounded-xl">
         <Image
           src={product.image}
@@ -21,6 +21,7 @@ export function ProductCard({ product }: ProductCardProps) {
           fill
           className="object-cover transition-transform group-hover:scale-105"
           />
+          {/* <span className='absolute bottom-2 right-2 bg-white text-lg text-gray-500 rounded-full px-2 text-center'>+</span> */}
       </div>
 
       <div className="mt-4 space-y-1">
@@ -29,7 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </h3>
 
         {/* Rating */}
-        {product.rating && (
+        {/* {product.rating && (
           <div className="flex items-center gap-1 text-xs text-neutral-500">
             {Array.from({ length: 5 }).map((_, i) => (
               <span key={i}>
@@ -38,10 +39,10 @@ export function ProductCard({ product }: ProductCardProps) {
             ))}
             <span><span className='text-black font-medium'>{product.rating}</span>/5</span>
           </div>
-        )}
+        )} */}
 
         {/* Price */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 mt-3">
           <span className="text-2xl font-semibold text-neutral-900">
             ${discountedPrice}
           </span>
@@ -56,6 +57,12 @@ export function ProductCard({ product }: ProductCardProps) {
             </span>
           )}
         </div>
+          {/* Button */}
+          <div>
+            <button className='mt-4 rounded-2xl bg-black px-4 py-2 w-full text-white'>
+              Add to Cart
+            </button>
+          </div>
       </div>
     </div>
   )
