@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Product } from '../../types/product'
 import { getDiscountedPrice } from '../../utils/pricing'
+import {ShoppingCart} from 'lucide-react'
 
 interface ProductCardProps {
   product: Product
@@ -59,8 +60,11 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
           {/* Button */}
           <div>
-            <button className='mt-4 rounded-2xl bg-black px-4 py-2 w-full text-white'>
-              Add to Cart
+            <button className='mt-4 rounded-2xl bg-black px-4 py-2 w-full text-white flex flex-row items-center justify-center'>
+              <span className='hidden md:block'>
+                Add to Cart
+              </span>
+              <ShoppingCart className='sm:block md:hidden' />
             </button>
           </div>
       </div>

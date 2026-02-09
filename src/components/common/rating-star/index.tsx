@@ -18,11 +18,14 @@ export default function index({rating,showNumber =false}: RatingStar) {
             return (
                 <Star
                 key={index}
+                size={15}
                 fill="gold"
                 stroke="gold"
                 />
             );
             }
+
+            
 
             })
         }
