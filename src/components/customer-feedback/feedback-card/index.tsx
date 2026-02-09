@@ -1,4 +1,4 @@
-
+import RatingStar from "@/components/common/rating-star/index"
 interface FeedBackCardProps {
     name:string;
     feedback:string;
@@ -15,9 +15,9 @@ export default function FeedBackCard({
   return (
     <div>
         <div className="bg-red-100 flex flex-col items-start max-w-96 rounded-2xl shadow-md p-4">
-            <span>{name}</span>
-            <span>{rating}/5</span>
-            <span>{feedback}</span>
+            <RatingStar rating={Math.ceil(rating)} />
+            <span className="font-bold text-xl">{name}</span>
+            <span className="text-sm text-gray-800">{feedback}</span>
         </div>
     </div>
   )

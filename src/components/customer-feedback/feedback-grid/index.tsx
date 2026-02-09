@@ -3,7 +3,7 @@ import FeedBackCard from "../feedback-card"
 export default function index() {
   const feedBacks = [
     {
-        name: "Abdullah Shahid",
+        name: "Khadija Qureshi",
         feedback: "Absolutely adorable! The quality is better than I expected. The bow stays in place all day without pulling my hair.",
         rating: 4.5,
     },{
@@ -14,12 +14,12 @@ export default function index() {
     {
         name: "Fatima Ali",
         feedback: "Loved the colors and the soft fabric. My daughter wears them daily and they still look brand new.",
-        rating: 4.5,
+        rating: 4,
     },
     {
         name: "Hira Malik",
         feedback: "Great quality for the price. The headband doesn’t feel tight and stays in place all day.",
-        rating: 4,
+        rating: 5,
     },
     {
         name: "Sana Ahmed",
