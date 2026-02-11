@@ -4,9 +4,9 @@ export default async function Index() {
     const categories = await getCategory();
   return (
     <div>
-        <span className='text-4xl flex flex-row justify-center mb-10 font-bungee font-extrabold'>
+        <h2 className='text-2xl md:text-4xl text-center mb-10 font-bungee font-extrabold'>
           BROWSE BY CATEGORIES
-        </span>
+        </h2>
         <div>
             <div className="py-10">
                 <CategoryGrid categories={categories}/>

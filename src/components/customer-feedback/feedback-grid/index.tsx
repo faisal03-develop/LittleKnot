@@ -35,7 +35,7 @@ export default function index() {
   
     return (
     <div>
-        <div className="grid grid-cols-3 gap-10 px-30">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10">
             {
                 feedBacks.map((feedback,index)=>(
                     <FeedBackCard key={index} name={feedback.name} feedback={feedback.feedback} rating={feedback.rating} />

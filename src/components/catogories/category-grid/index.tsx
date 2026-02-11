@@ -8,7 +8,7 @@ interface CategoryGridProps {
 export default function CategoriesGrid({categories}: CategoryGridProps) {
     const availableCategories = categories;
   return (
-        <section className="flex flex-row justify-center gap-20">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center px-4">
         {availableCategories.map((category) => (
             <CategoryCard
             key={category.title}

@@ -9,7 +9,7 @@ interface ProductGridProps {
 export function ProductGrid({ products,limit }: ProductGridProps) {
   const visibleProducts = limit ? products.slice(0, limit) : products;
   return (
-    <section className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {visibleProducts.map((product) => (
         <ProductCard
           key={product.id}
