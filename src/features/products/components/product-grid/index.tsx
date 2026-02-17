@@ -19,10 +19,11 @@ export function ProductGrid({ products, limit }: ProductGridProps) {
       "
     >
       {visibleProducts.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-        />
+        <div key={product.id} className="min-w-[280px] snap-center sm:min-w-0">
+          <ProductCard
+            product={product}
+          />
+        </div>
       ))}
     </section>
   )
