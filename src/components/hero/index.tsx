@@ -16,7 +16,7 @@ export default function index({ stats }: StatProps) {
         <div>
             <div className="flex flex-col lg:flex-row relative items-center justify-between gap-10 lg:py-0">
                 {/* Text Content */}
-                <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left lg:pt-10 pt-10 md:px-30">
+                <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left lg:pt-10 pt-10 sm:px-10 md:px-30">
                     <div className="max-w-xl">
                         <span className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight block">Handmade Hair Accessories, Sweetly Yours</span>
                     </div>
