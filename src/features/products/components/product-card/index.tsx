@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Product } from '../../types/product'
 import { getDiscountedPrice } from '../../utils/pricing'
-import {ShoppingCart} from 'lucide-react'
+import { ShoppingCart } from 'lucide-react'
 
 interface ProductCardProps {
   product: Product
@@ -10,7 +10,7 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const discountedPrice = getDiscountedPrice(
     product.price,
-    product?.discountPercentage ||0
+    product?.discountPercentage || 0
   )
 
   return (
@@ -21,8 +21,8 @@ export function ProductCard({ product }: ProductCardProps) {
           alt={product.name}
           fill
           className="object-cover transition-transform group-hover:scale-105"
-          />
-          {/* <span className='absolute bottom-2 right-2 bg-white text-lg text-gray-500 rounded-full px-2 text-center'>+</span> */}
+        />
+        {/* <span className='absolute bottom-2 right-2 bg-white text-lg text-gray-500 rounded-full px-2 text-center'>+</span> */}
       </div>
 
       <div className="mt-4 space-y-1">
@@ -58,15 +58,15 @@ export function ProductCard({ product }: ProductCardProps) {
             </span>
           )}
         </div>
-          {/* Button */}
-          <div>
-            <button className='mt-4 rounded-2xl bg-black px-4 py-2 w-full text-white flex flex-row items-center justify-center'>
-              <span className='hidden md:block'>
-                Add to Cart
-              </span>
-              <ShoppingCart className='sm:block md:hidden' />
-            </button>
-          </div>
+        {/* Button */}
+        <div>
+          <button className='mt-4 rounded-2xl bg-black px-4 py-2 w-full text-white flex flex-row items-center justify-center'>
+            <span className='hidden md:block'>
+              Add to Cart
+            </span>
+            <ShoppingCart className='sm:block md:hidden' />
+          </button>
+        </div>
       </div>
     </div>
   )

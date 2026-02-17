@@ -22,7 +22,7 @@ export async function getProducts(): Promise<Product[]> {
       name: 'Soft Cotton Scrunchie',
       image: '/assets/bow3.jpeg',
       price: 24.99,
-      discountPercentage:15,
+      discountPercentage: 15,
       rating: 3,
     },
     {

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function Index() {
 
-    const [index, setIndex] =useState(0);
+    const [index, setIndex] = useState(0);
 
     const messeges = [
         'Handmade with Love',
@@ -11,19 +11,19 @@ export default function Index() {
         'Bows, Scrunchies & Hairpins',
         'Gentle on Little Hair',
         'Thoughtfully Crafted Details',
-        ]
+    ]
 
     useEffect(() => {
         const interval = setInterval(() => {
-            
+
             setIndex((prevIndex) => (prevIndex + 1) % messeges.length);
         }, 3000);
         return () => clearInterval(interval)
-    },[])
+    }, [])
 
-  return (
-    <div className="text-gray-100 text-4xl font-bold">
-        {messeges[index]}
-    </div>
-  )
+    return (
+        <div className="text-gray-100 text-2xl md:text-4xl font-bold">
+            {messeges[index]}
+        </div>
+    )
 }
