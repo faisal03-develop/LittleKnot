@@ -7,6 +7,13 @@ import Messeges from "@/components/messeges";
 import CustomerFeedback from "@/components/customer-feedback/index"
 
 export default function Page() {
+
+  const statsData = [
+    { value: 64, label: "Brands" },
+    { value: 234, label: "Products" },
+    { value: 2397, label: "Happy Customers" },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       <SignUpBanner />
@@ -14,7 +21,7 @@ export default function Page() {
       {/* Navbar and Hero */}
       <div className="container mx-auto px-4">
         <Navbar />
-        <Hero />
+        <Hero stats={statsData} />
       </div>
 
       {/* Messages Section */}
