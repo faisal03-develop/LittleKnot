@@ -5,6 +5,7 @@ import Products from "@/features/products/index"
 import Categories from "@/components/catogories/index";
 import Messeges from "@/components/messeges";
 import CustomerFeedback from "@/components/customer-feedback/index"
+import NewsLetterForm from "@/components/newsletter-form";
 
 export default function Page() {
 
@@ -32,6 +33,7 @@ export default function Page() {
         <Products />
         <Categories />
         <CustomerFeedback />
+        <NewsLetterForm />
       </div>
     </div>
   )
