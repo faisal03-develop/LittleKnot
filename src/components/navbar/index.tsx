@@ -1,14 +1,15 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function index() {
+export default function Navbar() {
   return (
     <div>
       <div className="w-full px-4 py-4 md:px-24">
         {/* Logo */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <Image src="/logo/logo.png" height={18} width={126} alt="Logo" className="shrink-0" />
-          
+          {/* <Image src="/logo/logo.png" height={18} width={126} alt="Logo" className="shrink-0" /> */}
+          <span className="text-4xl font-black">LITTLE KNOT</span>
+
           {/* Navigation Links */}
           <div className="w-full md:w-auto overflow-x-auto">
             <ul className="flex flex-row gap-4 md:gap-7 items-center justify-center md:justify-start whitespace-nowrap">
@@ -32,9 +33,9 @@ export default function index() {
             <div>
               <Image src="/vector/search.png" height={20} width={20} alt="Search" />
             </div>
-            <input 
-              type="text" 
-              placeholder="Search For Products..." 
+            <input
+              type="text"
+              placeholder="Search For Products..."
               className="bg-transparent border-none focus:outline-none w-full"
             />
           </div>

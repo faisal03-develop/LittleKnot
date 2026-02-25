@@ -6,7 +6,7 @@ import Categories from "@/components/catogories/index";
 import Messeges from "@/components/messeges";
 import CustomerFeedback from "@/components/customer-feedback/index"
 import NewsLetterForm from "@/components/newsletter-form";
-
+import Footer from "@/components/footer";
 export default function Page() {
 
   const statsData = [
@@ -35,6 +35,7 @@ export default function Page() {
         <CustomerFeedback />
         <NewsLetterForm />
       </div>
+      <Footer />
     </div>
   )
 }
