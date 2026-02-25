@@ -34,11 +34,13 @@ export default function index() {
     ]
 
     return (
-        <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10">
+        <div className="w-full">
+            <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10 pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
                 {
                     feedBacks.map((feedback, index) => (
-                        <FeedBackCard key={index} name={feedback.name} feedback={feedback.feedback} rating={feedback.rating} />
+                        <div key={index} className="flex-none w-[85%] sm:w-[350px] md:w-auto snap-center">
+                            <FeedBackCard name={feedback.name} feedback={feedback.feedback} rating={feedback.rating} />
+                        </div>
                     ))
                 }
             </div>
